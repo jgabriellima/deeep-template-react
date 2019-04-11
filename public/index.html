@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:title" content="Deeep Digital" />
+    <meta property="og:description" content="Transforming your Marketing Business with Artificial Intelligence" />
+    <meta property="og:url" content="https://digital.deeep.marketing/" />
+    <meta property="og:image" itemprop="image" content="https://digital.deeep.marketing/logo-ico.png" />
+    <meta property="og:image:url" itemprop="image" content="https://digital.deeep.marketing/logo-ico.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:site_name" content="Deeep Digital" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <style>
+        #root {
+            width: 100%;
+            height: 100%;
+        }
+        .intl-tel-input {
+            width: 100%!important;
+        }
+    </style>
+    <title>Deeep Marketing - Transforming your Business with Artificial Intelligence</title>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script>
+    "use strict";
+    !function () {
+        var t = window.driftt = window.drift = window.driftt || [];
+        if (!t.init) {
+            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+            t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"], t.factory = function (e) {
+                return function () {
+                    var n = Array.prototype.slice.call(arguments);
+                    return n.unshift(e), t.push(n), t;
+                };
+            }, t.methods.forEach(function (e) {
+                t[e] = t.factory(e);
+            }), t.load = function (t) {
+                var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                var i = document.getElementsByTagName("script")[0];
+                i.parentNode.insertBefore(o, i);
+            };
+        }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('rh7v2kfnfvhv');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111516806-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-111516806-4');
+</script>
+<script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+<script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = 'GTXR2';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+        if (e in m) {
+            if (m.console && m.console.log) {
+                m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+        }
+        g = m[e] = function (a, b, s) {
+            g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.src = 'https://' + _fs_host + '/s/fs.js';
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function (i, v, s) {
+            g(l, {uid: i}, s);
+            if (v) g(l, v, s)
+        };
+        g.setUserVars = function (v, s) {
+            g(l, v, s)
+        };
+        g.event = function (i, v, s) {
+            g('event', {n: i, p: v}, s)
+        };
+        g.shutdown = function () {
+            g("rec", !1)
+        };
+        g.restart = function () {
+            g("rec", !0)
+        };
+        g.consent = function (a) {
+            g("consent", !arguments.length || a)
+        };
+        g.identifyAccount = function (i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+        };
+        g.clearUserCookie = function () {
+        };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+</script>
+</body>
+</html>

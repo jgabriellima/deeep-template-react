@@ -1,0 +1,11 @@
+@import '../../styles/app';
+
+.root {
+  height: 100%;
+
+  :global {
+    .widget {
+      padding: 10px 20px;
+    }
+  }
+}

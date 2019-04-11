@@ -1,0 +1,6 @@
+{
+  "name": "IssueModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./IssueModal.js"
+}
